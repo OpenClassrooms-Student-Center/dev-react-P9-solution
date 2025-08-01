@@ -7,11 +7,11 @@
   "compilerOptions": {
     "target": "ES2020",
     "lib": ["DOM", "DOM.Iterable", "ES6"],
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    // "strict": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -21,18 +21,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    // Options strictes supplémentaires
-    // "noImplicitAny": true,
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUncheckedIndexedAccess": true,
-    // "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
 
-    // Détection de code mort
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-
-    // Autres options utiles
-    "noPropertyAccessFromIndexSignature": true
+    "noUnusedParameters": true
   }
 }

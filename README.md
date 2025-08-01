@@ -1,4 +1,6 @@
-# 🌱 Jungle House - Application de Vente de Plantes
+# OpenClassrooms - Développeur React P9 - Migrez du code JavaScript vers TypeScript
+
+## 🌱 LMJ - Application de Vente de Plantes
 
 Une application React moderne pour la vente de plantes d'intérieur et d'extérieur, construite avec Vite, TypeScript et React Router.
 
