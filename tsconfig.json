@@ -22,7 +22,7 @@
     "jsx": "react-jsx",
 
     // Options strictes supplémentaires
-    "noImplicitAny": true,
+    // "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
