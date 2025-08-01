@@ -1,0 +1,6 @@
+.lmj-layout-inner {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	min-height: calc(100vh - 120px); /* Ajuster selon la hauteur du banner et footer */
+}

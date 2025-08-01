@@ -1,0 +1,302 @@
+h2 {
+	text-transform: capitalize;
+}
+
+.plant-detail-page {
+	min-height: 100vh;
+	background: #f8f9fa;
+	padding: 20px;
+}
+
+.plant-detail-header {
+	background: white;
+	padding: 20px;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.back-button {
+	text-decoration: none;
+	color: #6c757d;
+	font-weight: 500;
+	padding: 8px 16px;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	border: 1px solid #dee2e6;
+}
+
+.back-button:hover {
+	background: #f8f9fa;
+	color: #495057;
+	transform: translateX(-2px);
+}
+
+.plant-detail-header h1 {
+	margin: 0;
+	color: #2c3e50;
+	font-size: 1.8rem;
+}
+
+.plant-detail-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	align-items: start;
+}
+
+.plant-detail-image {
+	position: relative;
+	background: white;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	height: 100%;
+}
+
+.plant-detail-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.best-sale-badge {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	background: #28a745;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.plant-detail-info {
+	background: white;
+	border-radius: 12px;
+	padding: 32px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-detail-header-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.plant-detail-header-info h2 {
+	margin: 0;
+	color: #2c3e50;
+	font-size: 2rem;
+}
+
+.plant-price {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #28a745;
+}
+
+.plant-category {
+	margin-bottom: 24px;
+	padding: 16px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+.category-label {
+	font-weight: 500;
+	color: #6c757d;
+	margin-right: 8px;
+}
+
+.category-value {
+	color: #2c3e50;
+	font-weight: 500;
+}
+
+.plant-care {
+	margin-bottom: 24px;
+}
+
+.plant-care h3 {
+	margin: 0 0 16px 0;
+	color: #2c3e50;
+	font-size: 1.3rem;
+}
+
+.care-scales {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.care-scale-item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.care-label {
+	font-weight: 500;
+	color: #6c757d;
+	min-width: 80px;
+}
+
+.plant-description {
+	margin-bottom: 32px;
+}
+
+.plant-description h3 {
+	margin: 0 0 16px 0;
+	color: #2c3e50;
+	font-size: 1.3rem;
+}
+
+.plant-description p {
+	margin: 0;
+	color: #6c757d;
+	line-height: 1.6;
+	font-size: 1rem;
+}
+
+.plant-actions {
+	display: flex;
+	gap: 16px;
+}
+
+.add-to-cart-btn, .view-cart-btn {
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: none;
+	font-size: 1rem;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.add-to-cart-btn {
+	background: #28a745;
+	color: white;
+	flex: 2;
+}
+
+.add-to-cart-btn:hover {
+	background: #218838;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.view-cart-btn {
+	background: #f8f9fa;
+	color: #6c757d;
+	border: 1px solid #dee2e6;
+	flex: 1;
+}
+
+.view-cart-btn:hover {
+	background: #e9ecef;
+	color: #495057;
+	transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+	.plant-detail-content {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+	
+	.plant-detail-image {
+		height: 100%;
+	}
+	
+	.plant-detail-image img {
+		height: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.plant-detail-page {
+		padding: 16px;
+	}
+	
+	.plant-detail-header {
+		padding: 16px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+	
+	.plant-detail-header h1 {
+		font-size: 1.5rem;
+	}
+	
+	.plant-detail-info {
+		padding: 24px;
+	}
+	
+	.plant-detail-header-info {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+	
+	.plant-detail-header-info h2 {
+		font-size: 1.5rem;
+	}
+	
+	.plant-price {
+		font-size: 1.5rem;
+	}
+	
+	.plant-actions {
+		flex-direction: column;
+	}
+	
+	.add-to-cart-btn, .view-cart-btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.plant-detail-page {
+		padding: 12px;
+	}
+	
+	.plant-detail-header {
+		padding: 12px;
+	}
+	
+	.plant-detail-info {
+		padding: 16px;
+	}
+	
+	.plant-detail-image {
+		height: 100%;
+	}
+	
+	.plant-detail-image img {
+		height: 100%;
+	}
+	
+	.care-scale-item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+	}
+	
+	.care-label {
+		min-width: auto;
+	}
+} 

@@ -1,0 +1,21 @@
+.lmj-shopping-list {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 100%;
+}
+
+.lmj-plant-list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2em;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.lmj-plant-list li {
+	list-style: none;
+}

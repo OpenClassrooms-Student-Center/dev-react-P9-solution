@@ -1,0 +1,222 @@
+.lmj-banner {
+	color: black;
+	background: white;
+	border-bottom: solid 3px black;
+	width: 100%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.lmj-banner-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 24px;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.lmj-banner-content-left {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+.lmj-banner-content-left:hover {
+	opacity: 0.8;
+	text-decoration: none;
+	color: inherit;
+}
+
+.lmj-title {
+	padding-left: 16px;
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.lmj-logo {
+	height: 40px;
+	width: 40px;
+	transition: transform 0.3s ease;
+}
+
+.lmj-logo:hover {
+	transform: scale(1.05);
+}
+
+/* Badge du panier */
+.lmj-cart-badge {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: #f8f9fa;
+	color: #333;
+	padding: 8px 16px;
+	border-radius: 20px;
+	border: 2px solid #dee2e6;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+}
+
+.lmj-cart-badge:hover {
+	background: #e9ecef;
+	border-color: #adb5bd;
+	transform: translateY(-1px);
+	text-decoration: none;
+	color: #333;
+}
+
+.lmj-cart-icon {
+	width: 20px;
+	height: 20px;
+	fill: #333;
+}
+
+.lmj-cart-text {
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+/* Pastille du nombre d'articles */
+.lmj-cart-count-badge {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	background: #28a745;
+	color: white;
+	font-size: 0.75rem;
+	font-weight: bold;
+	min-width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.lmj-banner-content {
+		padding: 12px 16px;
+	}
+	
+	.lmj-title {
+		font-size: 1.2rem;
+		padding-left: 12px;
+	}
+	
+	.lmj-logo {
+		height: 32px;
+		width: 32px;
+	}
+	
+	.lmj-cart-badge {
+		padding: 6px 12px;
+		gap: 6px;
+	}
+	
+	.lmj-cart-icon {
+		width: 18px;
+		height: 18px;
+	}
+	
+	.lmj-cart-text {
+		font-size: 0.8rem;
+	}
+	
+	.lmj-cart-count-badge {
+		min-width: 16px;
+		height: 16px;
+		font-size: 0.7rem;
+		top: -6px;
+		right: -6px;
+	}
+}
+
+@media (max-width: 480px) {
+	.lmj-banner-content {
+		padding: 8px 12px;
+	}
+	
+	.lmj-title {
+		font-size: 1rem;
+		padding-left: 8px;
+	}
+	
+	.lmj-logo {
+		height: 28px;
+		width: 28px;
+	}
+	
+	.lmj-cart-badge {
+		padding: 4px 8px;
+		gap: 4px;
+	}
+	
+	.lmj-cart-icon {
+		width: 16px;
+		height: 16px;
+	}
+	
+	.lmj-cart-text {
+		font-size: 0.75rem;
+	}
+	
+	.lmj-cart-count-badge {
+		min-width: 14px;
+		height: 14px;
+		font-size: 0.65rem;
+		top: -5px;
+		right: -5px;
+	}
+}
+
+@media (max-width: 360px) {
+	.lmj-banner-content {
+		padding: 6px 8px;
+	}
+	
+	.lmj-title {
+		font-size: 0.9rem;
+		padding-left: 6px;
+	}
+	
+	.lmj-logo {
+		height: 24px;
+		width: 24px;
+	}
+	
+	.lmj-cart-badge {
+		padding: 3px 6px;
+		gap: 3px;
+	}
+	
+	.lmj-cart-icon {
+		width: 14px;
+		height: 14px;
+	}
+	
+	.lmj-cart-text {
+		font-size: 0.7rem;
+	}
+	
+	.lmj-cart-count-badge {
+		min-width: 12px;
+		height: 12px;
+		font-size: 0.6rem;
+		top: -4px;
+		right: -4px;
+	}
+}
