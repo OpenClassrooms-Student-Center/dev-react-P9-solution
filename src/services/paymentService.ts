@@ -1,5 +1,9 @@
+import type { PaymentFormData, PaymentResponse } from "../types";
+
 export class PaymentService {
-  static async processPayment(paymentData) {
+  static async processPayment(
+    _paymentData: PaymentFormData
+  ): Promise<PaymentResponse> {
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
     // Simulation d'un paiement réussi ou refusé
@@ -8,13 +12,10 @@ export class PaymentService {
     if (isSuccess) {
       return {
         success: true,
+        message: "Paiement traité avec succès",
         transactionId: `txn_${Date.now()}_${Math.random()
           .toString(36)
           .substr(2, 9)}`,
-        amount: paymentData.amount,
-        currency: "EUR",
-        status: "succeeded",
-        timestamp: new Date().toISOString(),
       };
     } else {
       throw new Error(
@@ -23,7 +24,11 @@ export class PaymentService {
     }
   }
 
-  static async validatePaymentMethod(paymentMethod) {
+  static async validatePaymentMethod(paymentMethod: {
+    cardNumber: string;
+    expiryDate: string;
+    cvv: string;
+  }): Promise<{ valid: boolean }> {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const isValid =

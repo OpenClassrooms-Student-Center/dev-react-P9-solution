@@ -1,3 +1,4 @@
+import type { Plant } from "../types";
 import monstera from "../assets/monstera.jpg";
 import lyrata from "../assets/lyrata.jpg";
 import pothos from "../assets/pothos.jpg";
@@ -19,7 +20,7 @@ import aloeVera from "../assets/aloeVera.jpeg";
 import echeveria from "../assets/echeveria.jpeg";
 import crassula from "../assets/crassula.jpg";
 
-export const plantList = [
+export const plantList: Plant[] = [
   {
     name: "monstera",
     category: "classique",
