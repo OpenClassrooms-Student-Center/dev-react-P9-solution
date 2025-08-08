@@ -6,7 +6,7 @@ export interface Plant {
   water: number;
   cover: string;
   price: number;
-  bestSale?: boolean;
+  description: string;
 }
 
 export interface CartItem extends Plant {

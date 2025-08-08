@@ -7,19 +7,11 @@ interface PlantItemProps {
   cover: string;
   name: string;
   price: number;
-  bestSale?: boolean;
   id: string;
   onAddToCart: () => void;
 }
 
-function PlantItem({
-  cover,
-  name,
-  price,
-  bestSale,
-  id,
-  onAddToCart,
-}: PlantItemProps) {
+function PlantItem({ cover, name, price, id, onAddToCart }: PlantItemProps) {
   const [showAnimation, setShowAnimation] = useState(false);
 
   const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -40,7 +32,6 @@ function PlantItem({
           alt={`${name} cover`}
           className="lmj-plant-item-cover"
         />
-        {bestSale && <span className="lmj-sales">Soldes</span>}
       </Link>
       <div className="lmj-plant-item-content">
         <div className="lmj-plant-item-header">

@@ -31,7 +31,7 @@ function ShoppingList({ addToCart }: ShoppingListProps) {
 
       <ul className="lmj-plant-list">
         {plantList.map(
-          ({ id, cover, name, water, light, price, category, bestSale }) =>
+          ({ id, cover, name, water, light, price, category, description }) =>
             !activeCategory || activeCategory === category ? (
               <li key={id}>
                 <PlantItem
@@ -39,7 +39,6 @@ function ShoppingList({ addToCart }: ShoppingListProps) {
                   cover={cover}
                   name={name}
                   price={price}
-                  bestSale={bestSale}
                   onAddToCart={() =>
                     handleAddToCart({
                       id,
@@ -49,7 +48,7 @@ function ShoppingList({ addToCart }: ShoppingListProps) {
                       light,
                       price,
                       category,
-                      bestSale,
+                      description,
                     })
                   }
                 />

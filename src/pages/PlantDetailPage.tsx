@@ -43,9 +43,6 @@ function PlantDetailPage({ addToCart }: PlantDetailPageProps) {
       <div className="plant-detail-content">
         <div className="plant-detail-image">
           <img src={plant.cover} alt={plant.name} />
-          {plant.bestSale && (
-            <div className="best-sale-badge">Meilleure vente</div>
-          )}
         </div>
 
         <div className="plant-detail-info">
@@ -77,22 +74,7 @@ function PlantDetailPage({ addToCart }: PlantDetailPageProps) {
 
           <div className="plant-description">
             <h3>Description</h3>
-            <p>
-              Cette magnifique plante {plant.category} est parfaite pour
-              embellir votre intérieur. Elle nécessite{" "}
-              {plant.light === 1
-                ? "peu"
-                : plant.light === 2
-                ? "modérément"
-                : "beaucoup"}{" "}
-              de lumière et{" "}
-              {plant.water === 1
-                ? "peu"
-                : plant.water === 2
-                ? "modérément"
-                : "beaucoup"}{" "}
-              d'arrosage.
-            </p>
+            <p>{plant.description}</p>
           </div>
 
           <div className="plant-actions">
