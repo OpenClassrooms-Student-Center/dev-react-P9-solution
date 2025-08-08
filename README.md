@@ -1,4 +1,6 @@
-# OpenClassrooms - Développeur React P9 - Migrez du code JavaScript vers TypeScript
+# OpenClassrooms - Développeur React - Migrez du code JavaScript vers TypeScript
+
+➡️ Cette base de code est la solution de l'exercice [Migrez du code JavaScript vers TypeScript](https://github.com/OpenClassrooms-Student-Center/dev-react-P9)
 
 ## 🌱 LMJ - Application de Vente de Plantes
 
